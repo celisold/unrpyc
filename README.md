@@ -3,9 +3,6 @@ script files. It will not extract files from .rpa archives. For that, use
 [rpatool](https://github.com/Shizmob/rpatool) or [UnRPA]
 (https://github.com/Lattyware/unrpa).
 
-Thanks to recent changes, unrpyc no longer needs internal renpy structures to
-work.
-
 Usage options:
 
 Options:
@@ -40,29 +37,6 @@ Options:
                  is exactly equivalent, only less cluttered.
 ```
 Usage: [python2] unrpyc.py [options] script1 script2 ...
-
-You can give several .rpyc files on the command line. Each script will be
-decompiled to a corresponding .rpy on the same directory. Additionally, you can
-pass directories. All .rpyc files in these directories or their subdirectories
-will be decompiled. By default, the program will not overwrite existing files,
-use -c to do that.
-
-This script will try to disassemble all AST nodes. In the case it encounters an
-unknown node type, which may be caused by an update to Ren'Py somewhere in the
-future, a warning will be printed and a placeholder inserted in the script when
-it finds a node it doesn't know how to handle. If you encounter this, please
-open an issue to alert us of the problem.
-
-For the script to run correctly it is required for the unrpyc.py file to be in
-the same directory as the modules directory.
-
-You can also import the module from python and call
-unrpyc.decompile_rpyc(filename, ...) directly
-
-As of renpy version 6.18 the way renpy handles screen language changed
-significantly. Due to this significant changes had to be made, and the script
-might be less stable for older renpy versions. If you encounter any problems
-due to this, please report them.
 
 Supported:
 * renpy version 6
