@@ -1,9 +1,3 @@
-master: [![Build Status](https://travis-ci.org/CensoredUsername/unrpyc.svg?branch=master)]
-(https://travis-ci.org/CensoredUsername/unrpyc)
-
-dev: [![Build Status](https://travis-ci.org/CensoredUsername/unrpyc.svg?branch=dev)]
-(https://travis-ci.org/CensoredUsername/unrpyc)
-
 Unrpyc is a script to decompile Ren'Py (http://www.renpy.org/) compiled .rpyc
 script files. It will not extract files from .rpa archives. For that, use
 [rpatool](https://github.com/Shizmob/rpatool) or [UnRPA]
@@ -70,12 +64,6 @@ significantly. Due to this significant changes had to be made, and the script
 might be less stable for older renpy versions. If you encounter any problems
 due to this, please report them.
 
-Alternatively there is an experimental version of the decompiler packed into
-one file available at https://github.com/CensoredUsername/unrpyc/releases
-This version will decompile a game from inside the renpy runtime. Simply copy
-the un.rpyc file into the "game" directory inside the game files and everything
-will be decompiled.
-
 Supported:
 * renpy version 6
 * Windows, OSX and Linux
@@ -86,5 +74,3 @@ incompatible, please open an issue.
 
 Requirements:
 * Python version 2.7
-
-https://github.com/CensoredUsername/unrpyc
